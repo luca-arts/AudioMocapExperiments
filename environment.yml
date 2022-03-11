@@ -1,5 +1,5 @@
 # run: conda env create --file environment.yml
-name: template
+name: audiomocap
 channels:
 - conda-forge
 - defaults
@@ -9,7 +9,10 @@ dependencies:
 # add here more dependencies which you use, preferably WITH version!
 # - anaconda
 # - pip
-# - numpy==1.22.2
+- numpy==1.22.2
 - pip:
   - notebook
+  - pyrealsense2==2.50.0.3812
+  - opencv-python==4.5.5.62
+  - mediapipe==0.8.9.1 
 #   - matplotlib==2.0.0
