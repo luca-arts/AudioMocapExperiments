@@ -1,0 +1,15 @@
+# run: conda env create --file environment.yml
+name: template
+channels:
+- conda-forge
+- defaults
+dependencies:
+- python==3.8
+- nb_conda_kernels==2.3.1
+# add here more dependencies which you use, preferably WITH version!
+# - anaconda
+# - pip
+# - numpy==1.22.2
+- pip:
+  - notebook
+#   - matplotlib==2.0.0
