@@ -1,44 +1,21 @@
-# template_title
-
-Project page for research project template_title by researcher
-
-## Introduction
+# depth info extraction  
+## Introduction  
+Depth Cam experiment notebook for PWO audio mocap. This is a notebook experiment aiding extraction of x/y/z positions of subjects from camera frames to help patial synchronization of audio and image in Ambisonic sound fields
 
 ### Research questions
 
-1. xxxx
-2. xxxx
+1. what precision can be achieved using an RGBD camera for subject following
+2. How does this compare to other methods
+    - algorithmic RGB (openCV)
+    - AI-drive (methodf's like alphapose or openpose
+3. what are the problems with this method
 
 ## folder structure
+### scripts
+in teh scripts folder, only one asset is present at the time.
+It is used to aid in the mapping of multiple detected persions to a single entity. It prses a text file generated from the other script with the actual tracking and writes a new one with filtered IDs. It is obsoleted by a new method but worked very well before the addition of AI to do subject classification
+    .# parse text file
+    .# 3 1 660 824 414 938 -1 -1 -1 -1 
+    .# frame number, person_id, x, y, width, height, confidence, xmin, ymin, xmax, ymax
+it filters the person_id to remove double IDs. 
 
-In notebooks, per topic there's a directory with notebooks to evaluate different approaches. In the accompanying markdown file we note down the expected result and findings.
-
-
-## get started
-
-We have two approaches: working locally or working via cloud (e.g. google colab)
-
-1. Open a terminal and go to the git directory
-2. If running locally: 
-    1. Create the environment via `python setup.py --env`
-    2. Activate the conda environment `conda activate <given environment name>`
-3. Next adapt the README.md file by running `python setup.py --project "<your project name>" "<your name>"`
-
-
-Now we have a basic repo setup which you can push to your newly created git repo.
-
-If you want to start experimenting with a topic, you need to create a folder for this topic, e.g. you want to experiment with "image classification", then you enter the following:
-
-`python setup.py --topic "image_classification"`
-
-This will create the folder with all names correct already.
-
-The idea is that you experiment first in the [playground](./notebooks/template/playground) by saving notebooks you've created locally or via Google Colab first here.
-In the [topic](./notebooks/template/) folder directly you have one notebook in which you list the succesful experiments.
-
-
-## Google Colab flow
-
-How do we integrate google colab and git swiftly.
-
-<!-- TODO add flow -->
