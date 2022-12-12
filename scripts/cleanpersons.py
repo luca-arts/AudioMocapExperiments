@@ -86,7 +86,7 @@ while True:
                     realID = 1
                 else: 
                     realID = 2 
-                framelist[currentframe]
+                framelist[currentframe].append({"id":realID, "x":person["x"], "y":person["y"], "w":person["w"], "h":person["h"]})
                 print("adding")
             #draw rectangle
             else:
