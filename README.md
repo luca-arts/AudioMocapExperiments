@@ -22,7 +22,7 @@ Tools for preparing depth captures for further analysis (preprocess)
 track hands, send pos over midi, spatialize stuff
 
 #### trackColorDepth.ipynb
-tracjks region of interest with depth info
+tracks region of interest with depth info
 
 ### scripts
 in the scripts folder, only one asset is present at the time.
