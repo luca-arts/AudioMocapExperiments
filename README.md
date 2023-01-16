@@ -1,6 +1,6 @@
 # depth info extraction  
 ## Introduction  
-Depth Cam experiment notebook for PWO audio mocap. This is a notebook experiment aiding extraction of x/y/z positions of subjects from camera frames to help patial synchronization of audio and image in Ambisonic sound fields
+Depth Cam experiment notebook for PWO audio mocap. This is a notebook experiment aiding extraction of x/y/z positions of subjects from camera frames to help spatial synchronization of audio and image in Ambisonic sound fields
 
 ### Research questions
 
